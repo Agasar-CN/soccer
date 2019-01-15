@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>软件足球队</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<div class="header header-fixed">
+    <div class="op"></div>
+    <div class="header-logo">
+
+        <div class="software-logo">
+            <img src="images/software-logo.png" alt="">
+        </div>
+        <div class="team-logo">
+            <img src="images/team-logo.png" alt="">
+        </div>
+
+
+    </div>
+    <div class="w">
+        <div class="left">
+            <ul class="left-ul">
+                <li class="active"><a href="#">首页</a></li>
+                <li><a href="#">动态</a></li>
+                <li><a href="package/teamInfo.html">球队</a></li>
+
+            </ul>
+        </div>
+        <div class="right">
+            <ul class="right-ul">
+                <li><a href="#">视频</a></li>
+                <li><a href="#">图集</a></li>
+                <li><a href="package/history.html">历史</a></li>
+                <!--<li><a href="#">登录</a></li>-->
+                <!--<li><a href="#">退出登录</a></li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="big-pic">
+    <img src="images/home-title4.png">
+    <div class="big-pic-title">
+        <p>
+            南昌航空大学软件学院足球队官方网站
+        </p>
+        <p>
+            NCHU SOFTWARE FOOLBALL TEAM
+        </p>
+        <p>
+            OFFICIAL WEBSITE
+        </p>
+    </div>
+</div>
+
+<div class="w">
+    <div class="section-one  clearfix">
+        <div class="scrollImg" id="scroll">
+            <div class="img">
+                <ul id="imgs">
+                    <li><img src="images/scrollImg1.jpg" alt=""></li>
+                    <li><img src="images/scrollImg2.jpg" alt=""></li>
+                    <li><img src="images/scrollImg3.jpg" alt=""></li>
+                </ul>
+            </div>
+            <div id="arr">
+                <span id="left"><</span>
+                <span id="right">></span>
+            </div>
+        </div>
+        <!--图集-->
+        <div id="mod-img-impnews">
+            <div class="tab">
+                <div class="jiao-title"></div>
+                <div class="tab-title">图集</div>
+                <div class="tab-more"><a href="#"> 更多 ></a></div>
+            </div>
+            <div class="impnews">
+                <ul class="tuji">
+                    <a class="tuji-link">
+                        <li class="tuji-pic">
+                            <img class="img" src="images/001.jpg">
+                            <i class="pic-title">标题一那就交纳侧妃拿得分王妇女非得我就</i>
+                        </li>
+                    </a>
+                    <a class="tuji-link">
+                        <li class="tuji-pic">
+                            <img class="img" src="images/001.jpg">
+                            <i class="pic-title">标题二</i>
+                        </li>
+                    </a>
+                    <a class="tuji-link">
+                        <li class="tuji-pic">
+                            <img class="img" src="images/001.jpg">
+                            <i class="pic-title">标题三</i>
+                        </li>
+                    </a>
+                    <a class="tuji-link">
+                        <li class="tuji-pic">
+                            <img class="img" src="images/001.jpg">
+                            <i class="pic-title">标题四</i>
+                        </li>
+                    </a>
+                </ul>
+        </div>
+
+    </div>
+        <!--公告-->
+        <div id="mod-impnews">
+            <div class="tab">
+                <div class="jiao-title"></div>
+                <div class="tab-title">公告</div>
+                <div class="tab-more"><a href="#"> 更多 ></a></div>
+            </div>
+            <div id="main-list">
+                <ul id="notice">
+                </ul>
+            </div>
+        </div>
+        <!--中间部分-->
+        <div class="section-two  clearfix">
+            <!--新闻-->
+            <div class="left">
+                <div class="tab">
+                    <div class="jiao-title"></div>
+                    <div class="tab-title">新闻</div>
+                    <div class="tab-more"><a href="#"> 更多 ></a></div>
+                </div>
+                <!--导航栏-->
+                <div id="news-head">
+                    <div id="head-left">
+                        <ul id="news-list">
+                            <li name="a" onclick="tab(this)" class="active">
+                                <a>赛事战报</a>
+                            </li>
+                            <li name="a" onclick="tab(this)" class="none"><a>球队日常</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="news-content">
+                    <!--球队新闻-->
+                    <div  name="con" class="active">
+                        <div class="news-list-content">
+                            <ul id="articles">
+                                <li>
+                                    <a href="#">
+                                        <div class="news-pic">
+                                            <img src="" class="news-img">
+                                            <p class="news-explain">
+                                                <span>吴经理正在记录着咱们队员的训练日常</span>
+                                                <span>2019-01-08</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="news-pic">
+                                            <img alt="images/scrollImg3.jpg" class="news-img">
+                                            <p class="news-explain">
+                                                <span>吴经理正在记录着咱们队员的训练日常</span>
+                                                <span>2019-01-08</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="news-pic">
+                                            <img src="images/scrollImg2.jpg" class="news-img">
+                                            <p class="news-explain">
+                                                <span>吴经理正在记录着咱们队员的训练日常</span>
+                                                <span>2019-01-08</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="news-pic">
+                                            <img src="images/scrollImg1.jpg" class="news-img">
+                                            <p class="news-explain">
+                                                <span>吴经理正在记录着咱们队员的训练日常</span>
+                                                <span>2019-01-08</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--球队日常-->
+                    <div  name="con" class="none">
+                        <div class="news-list-content">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="news-pic">
+                                            <img src="images/scrollImg3.jpg" class="news-img" >
+                                            <p class="news-explain">
+                                                <span>吴经理正在记录着咱们队员的训练日常吴经理正在记录着咱们队员的训练日常</span>
+                                                <span>2019-01-08</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="news-pic">
+                                            <img src="images/scrollImg1.jpg" class="news-img">
+                                            <p class="news-explain">
+                                                <span>吴经理正在记录着咱们队员的训练日常</span>
+                                                <span>2019-01-08</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="news-pic">
+                                            <img src="images/scrollImg2.jpg" class="news-img">
+                                            <p class="news-explain">
+                                                <span>吴经理正在记录着咱们队员的训练日常</span>
+                                                <span>2019-01-08</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="news-pic">
+                                            <img src="images/scrollImg3.jpg" class="news-img">
+                                            <p class="news-explain">
+                                                <span>吴经理正在记录着咱们队员的训练日常</span>
+                                                <span>2019-01-08</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="news-pic">
+                                            <img src="images/scrollImg2.jpg" class="news-img">
+                                            <p class="news-explain">
+                                                <span>吴经理正在记录着咱们队员的训练日常</span>
+                                                <span>2019-01-08</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="news-pic">
+                                            <img src="images/scrollImg1.jpg" class="news-img">
+                                            <p class="news-explain">
+                                                <span>吴经理正在记录着咱们队员的训练日常</span>
+                                                <span>2019-01-08</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <!--分页按钮-->
+                <div class="fen-package">
+                    <ul id="index">
+
+                    </ul>
+                </div>
+
+            </div>
+            <!--榜单-->
+            <div class="right">
+            <div id="shooter-list">
+                <div id="list-head">
+                    <li class="head-tab" name="h" style="background:#00AEFF;">射手榜</li>
+                    <li class="head-tab" name="h">助攻榜</li>
+                    <li class="head-tab" name="h">赛程</li>
+                </div>
+                <!--射手榜-->
+                <li name="b" class="middle-tab" style="display: block">
+                    <div class="list-content">
+                            <table class="list-tab">
+                                <thead>
+                                    <tr>
+                                        <th>排名</th>
+                                        <th>姓名</th>
+                                        <th>学号</th>
+                                        <th>进球数</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>1</td>
+                                    <td>张三</td>
+                                    <td>17203124</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>张三</td>
+                                    <td>17203124</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>张三</td>
+                                    <td>17203124</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>张三</td>
+                                    <td>17203124</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>张三</td>
+                                    <td>17203124</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>张三</td>
+                                    <td>17203124</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>张三</td>
+                                    <td>17203124</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>张三</td>
+                                    <td>17203124</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>张三</td>
+                                    <td>17203124</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>张三</td>
+                                    <td>17203124</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>张三</td>
+                                    <td>17203124</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>张三</td>
+                                    <td>17203124</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>张三</td>
+                                    <td>17203124</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>张三</td>
+                                    <td>17203124</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>张三</td>
+                                    <td>17203124</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>张三</td>
+                                    <td>17203124</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>张三</td>
+                                    <td>17203124</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>张三</td>
+                                    <td>17203124</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>张三</td>
+                                    <td>17203124</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>张三</td>
+                                    <td>17203124</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>张三</td>
+                                    <td>17203124</td>
+                                    <td>100</td>
+                                </tr>
+
+                            </table>
+                    </div>
+                </li>
+                <!--助攻榜-->
+                <li name="b" class="middle-tab" style="display: none">
+                    <div class="list-content">
+                            <table class="list-tab">
+                                <thead>
+                                <tr>
+                                    <th>排名</th>
+                                    <th>姓名</th>
+                                    <th>学号</th>
+                                    <th>助攻数</th>
+                                </tr>
+                                </thead>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>李四</td>
+                                    <td>17200000</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>李四</td>
+                                    <td>17200000</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>李四</td>
+                                    <td>17200000</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>李四</td>
+                                    <td>17200000</td>
+                                    <td>7</td>
+                                </tr>
+                            </table>
+                    </div>
+                </li>
+                <!--赛程-->
+                <li name="b" class="middle-tab" style="display: none">
+                    <div class="list-content">
+                        <ul class="schedule">
+                            <li class="time">2019-01-08 今天 星期二</li>
+                            <li class="details-time">14:00 友谊赛</li>
+                            <li class="details-fight">
+                                <p class="name">软件学院</p>
+                                <p class="score">0 - 0</p>
+                                <p class="name">信工学院</p>
+                            </li>
+                            <li class="details-time">14:30 友谊赛</li>
+                            <li class="details-fight">
+                                <p class="name">航制学院</p>
+                                <p class="score">0 - 0</p>
+                                <p class="name">体育学院</p>
+                            </li>
+                            <li class="details-time">14:00 友谊赛</li>
+                            <li class="details-fight">
+                                <p class="name">经管学院</p>
+                                <p class="score">0 - 0</p>
+                                <p class="name">环化学院</p>
+                            </li>
+
+                        </ul>
+                        <ul class="schedule">
+                            <li class="time">2019-01-09 明天 星期三</li>
+                            <li class="details-time">9:00 友谊赛</li>
+                            <li class="details-fight">
+                                <p class="name">材料学院</p>
+                                <p class="score">0 - 0</p>
+                                <p class="name">土建学院</p>
+                            </li>
+                            <li class="details-time">14:00 友谊赛</li>
+                            <li class="details-fight">
+                                <p class="name">经管学院</p>
+                                <p class="score">0 - 0</p>
+                                <p class="name">环化学院</p>
+                            </li>
+                            <li class="details-time">14:00 友谊赛</li>
+                            <li class="details-fight">
+                                <p class="name">经管学院</p>
+                                <p class="score">0 - 0</p>
+                                <p class="name">环化学院</p>
+                            </li>
+
+                        </ul>
+                        <ul class="schedule">
+                            <li class="time">2019-01-10 后天 星期四</li>
+                            <li class="details-time">9:00 友谊赛</li>
+                            <li class="details-fight">
+                                <p class="name">材料学院</p>
+                                <p class="score">0 - 0</p>
+                                <p class="name">土建学院</p>
+                            </li>
+                            <li class="details-time">14:00 友谊赛</li>
+                            <li class="details-fight">
+                                <p class="name">经管学院</p>
+                                <p class="score">0 - 0</p>
+                                <p class="name">环化学院</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<!--页脚-->
+<footer>
+    <div class="footer">
+        <p class="bootom">南昌航空大学软件学院足球队@2018All rights reserved</p>
+        <p class="bootom">联系电话：15070136342 Email：331804971@qq.com</p>
+        <p class="bootom">本网站由南昌航空大学软件学院足球队制作及提供技术支持</p>
+        <p class="bootom"><a href="#">管理员登录</a></p>
+    </div>
+</footer>
+<script src="controller/index.js"></script>
+</body>
+</html>
+<script>
+    window.onload = function()
+    {
+        //获取鼠标滑过或点击的标签和要切换内容的元素
+        var titles = document.getElementsByName("h");
+        var divs  = document.getElementsByName("b");
+        // alert(divs.length);
+        if(titles.length != divs.length)
+            return;
+        //遍历titles下的所有li
+        for(var i=0;i<titles.length;i++)
+        {
+            titles[i].id = i;
+            titles[i].onmouseover = function(){
+                for(var j=0;j<titles.length;j++)
+                {
+                    //清除所有li上的class
+                    titles[j].style.backgroundColor = '#006bb7';
+                    divs[j].style.display = 'none';
+                }
+                //设置当前为高亮显示
+                this.style.backgroundColor = '#00AEFF';
+                divs[this.id].style.display = 'block';
+            }
+        }
+    }
+</script>
+<script type="text/javascript">
+    function check(id){
+
+        return typeof id==='string'?document.getElementById(id):id;
+
+    }
+</script>
+<script type="text/javascript">
+
+    var li_arr = document.getElementsByName("a");
+    var div_arr = document.getElementsByName("con");
+    var len = li_arr.length;
+
+    function tab(obj) {
+        for (var i = 0; i < len; i++) {
+            if (li_arr[i] == obj) {
+                li_arr[i].setAttribute("class", "active");
+                div_arr[i].setAttribute("class", "active");
+            } else {
+                li_arr[i].setAttribute("class", "none");
+                div_arr[i].setAttribute("class", "none");
+            }
+        }
+    }
+</script>
+<script>
+    function check(id) {return document.getElementById(id)}
+    var scroll = document.getElementById("scroll");
+    scroll.onmouseover = function() {
+        check("arr").style.display = "block";
+    }
+    scroll.onmouseout = function() {
+        check("arr").style.display = "none";
+    }
+
+    check("right").onclick = function() {
+        target -= 510;
+    }
+    check("left").onclick = function() {
+        target += 510;
+    }
+    var timer = null;
+    //缓动动画
+    var leader = 0,target = 0;
+    setInterval(function() {
+        if(target >= 0)
+        {
+            target = 0;
+        }
+        else if(target <= -1020)
+        {
+            target = -1020;
+        }
+        leader = leader + (target - leader) / 10;
+        check("imgs").style.left = leader + "px";
+    },30)
+</script>

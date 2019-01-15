@@ -1,0 +1,114 @@
+
+#big-pic{
+    background: url("../images/history-bg.jpg") no-repeat;
+    width: 1519.2px;
+    height: 520px;
+    margin: 0 auto;
+    /*! position: absolute; */
+    /*! top: 0; */
+}
+#big-pic p{
+    font-size: 36px;
+    font-weight: bold;
+    width:210px;
+    text-align: center;
+    margin:0 auto;
+    padding:235px;
+    color:#006bb7;
+}
+.contain{
+    width:100%;
+    /*! background: #fff; */
+}
+.contain ul{
+    width:100%;
+    overflow: hidden;
+}
+.contain ul li{
+    width:100%;
+    height: 250px;
+}
+.history-contain{
+    width: 595px;
+    margin:2.5px 2.5px 2.5px 2.5px;
+    float: left;
+    height: 250px;
+}
+.history-contain img{
+    width: 595px;
+    height: 250px;
+}
+.history-contain img:hover{
+    opacity: 0.7;
+}
+.history-date-intr{
+    width: 595px;
+    float: left;
+    background: #006bb7;
+    height: 250px;
+    margin:2.5px;
+}
+.history-date{
+    width:25%;
+    height: 50%;
+    float: left;
+    margin:62.5px 30px 62.5px 50px;
+}
+.history-date p:first-child{
+    font-size: 56px;
+    letter-spacing: 1px;
+    font-weight:700;
+    color:#ffea10;
+    font-family: BebasRegular;
+    text-align: left;
+}
+.history-date p:last-child{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color:#ffea10;
+    font-family: BebasRegular;
+    text-align: center;
+    width: 117.5px;
+}
+.history-introduce{
+    width: 57%;
+    height: 75%;
+    float: left;
+    margin: 31px 0;
+}
+.history-introduce p:first-child{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.42857143;
+    color:#fff;
+    font-family: "微软雅黑";
+}
+.history-introduce p:last-child{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: left;
+    line-height: 1.42857143;
+    letter-spacing: normal;
+    margin-top:20px;
+    font-size: 12px;
+    color:#fff;
+}
+.cicle{
+    position: relative;
+    top:50%;
+    left: 48.8%;
+    width: 30px;
+    height: 30px;
+    background: #eee;
+    border-radius: 20px;
+}
+.history-w{
+    /*! position: relative; */
+    /*! top:520px; */
+}

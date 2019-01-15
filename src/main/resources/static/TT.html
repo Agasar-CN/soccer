@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nexcel</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<p id="notice">如果你点我，我就会消失。</p>
+<p>继续点我!</p>
+<p id="pr">接着点我!</p>
+    <button onclick="loadXMLDoc()">Click</button>
+<script>
+    $(document).ready(function(){
+        $.ajax({
+            url:'/soccer/index/notice',
+            type:'get',
+            dataType:'json',
+            success:function(data){
+                alert(data.Notice[0].announceTitle);
+            },
+            error:function(){
+                alert("wrong");
+            }
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("#notice").click(function () {
+            $("#notice").hide();
+        });
+    });
+</script>
+</body>
+</html>
